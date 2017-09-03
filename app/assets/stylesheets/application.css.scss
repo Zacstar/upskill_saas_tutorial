@@ -24,6 +24,11 @@ h1,h2,h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
+.navbar-brand{
+  font-family:'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
 //Background Gradient
 .navbar, .home-callout {
   // Gradient provided by by @_ighosh @ ui Gradients.com
@@ -38,7 +43,7 @@ background: linear-gradient(to right, #070000, #4C0001, #070000); /* W3C, IE 10+
     &:hover{
       color:white;
       opacity:0.75;
-    }
+  }
 }
 
 //Home Page Styles
