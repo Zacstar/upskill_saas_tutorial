@@ -57,3 +57,10 @@ background: linear-gradient(to right, #070000, #4C0001, #070000); /* W3C, IE 10+
 .navbar {
     border: none;
 }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color:white;
+  &:hover, &:focus {
+    background-color:#00c6ff;
+  }
+}
