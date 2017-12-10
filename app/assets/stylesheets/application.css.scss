@@ -28,18 +28,20 @@ h1:after {
 content: “Anaglyph”;
 }
 
+
+
 h1 {
 display: inline;
 position: relative;
 letter-spacing: -5px; /* This will push it together giving us a nice 3D vibe */
-color: rgba(0,0,255,0.5); /* This will give us a blue at 50% opacity */
+color: white; /* This will give us a blue at 50% opacity */
 }
 
 h1:after {
-content: “Anaglyph”;
+content: “Anaglyph”,;
 position: absolute;
 left: 8px; top: 6px; /* These are aligning it to be where we’d like relative to the last word */
-color: rgba (255,0,0,0.5); /* This gives us a red at 50% opacity */
+color: white; /* This gives us a red at 50% opacity */
 }
 
 
@@ -56,8 +58,6 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 }
 
 
-
-
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
     color:white;
@@ -65,7 +65,6 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
       color:white;
       opacity:0.75;
   }
-  
 }
 
 //Home Page Styles
@@ -86,10 +85,12 @@ body {
   height: 100vh;
   margin: 0;
   background: radial-gradient(circle, darken(dodgerblue, 10%), #1f4f96, #1b2949, #000);
+  }
+
+h3 {
+  color:white;
 }
-
-
-
+  
 
 .alert-notice{
   display:none;
@@ -108,4 +109,5 @@ body {
   &:hover, &:focus {
     background-color:#ff00ff;
   }
+  
 }
