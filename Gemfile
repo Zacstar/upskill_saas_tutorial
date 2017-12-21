@@ -71,3 +71,4 @@ gem 'stripe', '1.48.0'
 
 # Use Figaro for ENV variables
 gem 'figaro', '1.1.1'
+
