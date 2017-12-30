@@ -1,6 +1,5 @@
 /*global $, Stripe*/ 
-/*global stripeResponseHandler*/
-/*global token*/
+
 // Document ready
     $(document).on('turbolinks:load', function(){
     var theForm = $('#pro_form');
@@ -54,9 +53,9 @@
     function stripeResponseHandler (status,response) {
       //Get the token from the response
       var token= response.id;
-    }
-    //Inject card token as hidden field into form.
-    theForm.append($('<input type="hidden" name="user[stripe_card_token]">').val(token) );
+     //Inject card token as hidden field into form.
+    theForm.append( $('<input type="hidden" name="user[stripe_card_token]">').val(token) );
     //Submit form to our Rails app.
     theForm.get(0).submit();
+    }
 });
